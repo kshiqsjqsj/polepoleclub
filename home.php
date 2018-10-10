@@ -8,7 +8,7 @@ Template Name: フロントページ
 		<div class="flexslider">
 			<ul class="slides cf"><!-- 必ずクラスは slides -->
 				<li>
-				  <a href="http://polepoleclub.jp/about.html">
+				  <a href="http://polepoleclub.jp/about.html" target="_blank">
 					  <img src="<?php echo get_template_directory_uri(); ?>/img/slide01.jpg" alt="PCスライド１" class="pc tablet"/>
 				    <img src="<?php echo get_template_directory_uri(); ?>/img/slide1_sp.jpg" alt="SPスライド1" class="smart"/>
 				  </a>
