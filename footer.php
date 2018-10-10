@@ -53,7 +53,7 @@
 
 </footer>
 
-<!--ページトップスクロール-->
+<!--トップスクロール-->
 
     <div id="pagetop"><span class="top_triangle"></span></div>
 
