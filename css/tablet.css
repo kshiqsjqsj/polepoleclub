@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media only screen and (max-width:1024px){
+	.pc {
+		display: none;
+	}
+
+	.tablet {
+		display: block;
+	}
+
+
+	header {
+		position: fixed;
+		top: 0;
+		height: 70px;
+		background-color: rgba(255,255,255,0.8);
+		z-index: 9999;
+		margin: 0;
+	}
+
+	header #headerInner {
+		width: 96%;
+		height: 100%;
+		margin: 0 auto;
+
+	}
+
+	#headerInner h1 {
+		width: 300px;
+		height: 60px;
+		top: 8px;
+	}
+
+	#headerInner h1 img {
+		width: 96%;
+		height: auto;
+	}
+
+
+	#headerInner button.btn_menu {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 42px;
+	height: 42px;
+    color: green;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    z-index: 1001;
+    text-align: center;
+    outline: none;
+  }
+
+  /*   ハンバーガーボタン3本線   */
+  button.btn_menu span.bar {
+    display: block;
+	width: 32px;
+    height: 2px;
+	position: absolute;
+    background-color: green;
+    transition: all 0.2s;
+
+  }
+
+	#headerInner button.btn_menu span.bar1 {
+		top: 12px;
+	}
+
+	#headerInner button.btn_menu span.bar2 {
+		top:  50%;
+		margin-top: -1px;
+	}
+
+	#headerInner button.btn_menu span.bar3 {
+		bottom: 12px;
+	}
+
+	#headerInner button .menu,#headerInner button .close {
+		position: absolute;
+		bottom: -5px;
+		left: -2px;
+	}
+
+	  #headerInner button .close{
+		letter-spacing: 0;
+		display: none;
+	  }
+	  #headerInner button .menu {
+		display: block;
+	  }
+
+	/*  メニューアクティブ時  */
+
+ #headerInner button.btn_menu.active .bar1 {
+	  -webkit-transform:translateY(8px) rotate(45deg);
+	  -ms-transform:translateY(8px) rotate(45deg);
+	  transform:translateY(8px) rotate(45deg);
+  }
+  #headerInner button.btn_menu.active .bar2 {
+    opacity: 0;
+  }
+  #headerInner button.btn_menu.active .bar3 {
+    -webkit-transform:translateY(-8px) rotate(-45deg);
+        -ms-transform:translateY(-8px) rotate(-45deg);
+            transform:translateY(-8px) rotate(-45deg);
+  }
+  #headerInner button.active .menu {
+    display: none;
+  }
+  #headerInner button.active .close {
+    display: block;
+  }
+	
+/*アンドロイド用*/
+	
+	.android #headerInner button.btn_menu{
+		top: 4px;
+	}
+	
+	.android #headerInner button .menu{
+		display: none;
+	}
+	
+	.android #headerInner button .close{
+		display: none;
+	}
+
+	.smartGnavi {
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+	overflow: scroll;
+    top: 70px;
+    right: 0;
+    z-index: 5000;
+   /* background-color: rgba(255,255,255,0.8);*/
+	background-color: rgba(0,141,90,0.9);
+   }
+
+	.smartGnavi li {
+	letter-spacing: 0.1em;
+		text-align: left;
+		font-size: 14px;
+		font-weight: 200;
+		border-top: white 1px dotted;
+		color: white;
+		padding: 12px 0;
+		padding-left: 1.5em;
+		cursor: pointer;
+	}
+
+	.smartGnavi ul li a {
+		display: block;
+	}
+
+	.smartGnavi #sp_menber_button {
+		text-align: center;
+		padding-left: 0;background-color: rgba(255,153,0,0.6);
+		border-bottom: white 1px dotted;
+	}
+
+	.smartGnavi #sp_donation_button {
+		text-align: center;
+		background-color: rgba(255,0,0,0.6);
+		padding-left: 0;
+		border-bottom: none;
+		border-top: none;
+	}
+
+	.smartGnavi .sp_sns_icons {
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	 .smartGnavi .sp_sns_icons li  {
+		border: none;
+		display: inline-block;
+		 padding: 0 8px;
+	}
+
+	.content {
+		width: 92%;
+		margin: 25px auto 0;
+	}
+
+	.main_area {
+		width: 65%;
+	}
+	
+	.title h2 {
+		width: 100%;
+	}
+	
+	.thumbnail-wrap img {
+	width: 200px;
+		height: auto;
+}
+
+	
+	#more_mobail {
+		border: solid 1px green;
+		width: 85%;
+		max-width: 350px;
+		margin: 0 auto;
+		display: block;
+	}
+
+	#more_mobail a {
+		display: block;
+		text-align: center;
+		padding: 5px 0;
+		color: green;
+		font-size: 14px;
+	}
+
+	#more_mobail a::before {
+		content: "";
+		padding-right: 5px;
+		  display: inline-block;
+		  border-top: 5px solid transparent;
+		  border-bottom: 5px solid transparent;
+		  border-left: 5px solid orange;
+	}
+
+	.right_area {
+		width: 30%;
+	}
+
+	.newsTopic {
+		padding: 0 1%;
+	}
+
+	.newsText {
+		padding-left: 5%;
+	}
+
+
+	.footerInner {
+		width: 96%;
+	}
+
+
+	.access {
+		width: 50%;
+	}
+
+	.footerSns {
+		width: 40%;
+	}
+
+	.footerSns li {
+		margin-left: 5%;
+	}
+
+/*各固定ページ見だし画像*/
+	
+	.title_img{
+		padding-top: 70px;
+	}
+	
+/*見だし画像無しページ（single,access）上部余白設定*/
+	.space-top{
+		padding-top: 80px;
+		margin-top: 0;
+	}
+
+/*アクセスページ*/
+		.gmap_wrap {
+			width: 90%;
+		}
+
+		#map {
+			height: 400px;
+		}
+
+}

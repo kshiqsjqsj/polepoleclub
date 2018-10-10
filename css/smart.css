@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* スマートフォンデザイン*/
+
+@media only screen and (max-width: 600px){
+	.pc {
+		display: none;
+	}
+
+	.smart {
+		display: block;
+	}
+
+	.tablet {
+		display: none;
+	}
+	
+	#wrappre {
+		overflow: hidden;
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		height: 50px;
+		background-color: rgba(255,255,255,0.8);
+		z-index: 9999;
+		margin: 0;
+	}
+
+
+	#headerInner h1 {
+		width: 210px;
+		height: 40px;
+		top: 7px;
+	}
+
+	#headerInner button.btn_menu {
+    padding: 0;
+    width: 42px;
+	height: 42px;
+    color: green;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    z-index: 1001;
+  }
+
+	.smartGnavi {
+	display: none;
+  top: 50px;
+	right: 0;
+   }
+	
+	.content {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.main_area {
+		margin: 25px 0 50px;
+	}
+
+	.main_area,.right_area,#top,#sidebar-top {
+		float: none;
+		width: 100%;
+	}
+	
+	.title h2 {
+		width: 100%;
+	}
+
+	.newsTitle {
+		margin-top: 5%;
+		margin-bottom: 0;
+	}
+	
+
+	.newsTopic {
+		padding: 0;
+		margin: 25px auto 30px;
+		width: 90%;
+		max-width: 450px;
+		overflow: hidden;
+	}
+
+	.newsTopic a{
+		display: block;
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.thumbnail-wrap,.newsText{
+		display: block;
+	}
+
+  .newsTopic a img {
+	width: 100%;
+	height: 230px;  
+  margin: 0 auto;
+	}
+
+	.newsText {
+		width: 100%;
+	padding-top: 10px;
+	padding-left: 0;
+	}
+
+	.newsText h3 {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+/*投稿一覧ページ設定*/
+
+.archive-topic{
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+}
+
+.archive-topic dl {
+	display: block;
+	width: 100%;
+	height: 4em;
+}
+
+.archive-topic .archive-title {
+	display:block;
+	margin-top: 8px;
+	padding-left: 3px;
+}
+
+.archive-topic dd h3 {
+	margin: 0;
+}
+
+	/*サイドスライド*/
+
+	.side_slide_subject, #side_slide {
+		width: 85%;
+		max-width: 450px;
+	}
+
+ #side_slide{
+		height: 250px;
+	}
+
+	.link_text{
+		text-align: center;
+	}
+
+	/*カテゴリ、アーカイブリストバー*/
+		.list-wrappre {
+			padding: 0;
+		}
+
+	.bannerArea {
+		width: 98%;
+		margin: 5% auto 3%;
+		padding: 0;
+		float: none;
+	}
+
+	.bannerImage {
+		width: 96%;
+	}
+
+	.bannerImage img {
+		width: 100%;
+	}
+
+	footer {
+		height: auto;
+	}
+
+	.footerInner {
+		width: 96%;
+		margin: 0 auto;
+	}
+
+	.footerNav {
+		padding: 0;
+		padding-top: 1em;
+	}
+
+	.footerNav ul {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		margin-left: 0;
+	}
+
+	.footerNav ul > li {
+		width: 25%;
+	}
+
+	.footerNav ul li .sub-menu {
+		display: none;
+	}
+
+	.footerNav ul #menu-item-223,.footerNav ul #menu-item-224{
+		display: block;
+	}
+
+	.access,.footerSns {
+		float: none;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.access {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.left {
+		width: 80%;
+		height: auto;
+	}
+
+	.accessText {
+		float: left;
+		padding-left: 3%;
+	}
+
+	.footerSns {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	#copyRight {
+		width: 96%;
+	}
+
+	#pagetop {
+		bottom: 15px;
+		right: 15px;
+		width: 70px;
+		height: 70px;
+  }
+
+	.top_triangle {
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid white;
+		border-left: 10px solid transparent;
+	}
+	
+	/*各固定ページ見だし画像*/
+	
+	.title_img{
+		padding-top: 60px;
+	}
+	
+	/*見だし画像無しページ（single,access）上部余白設定*/
+	.space-top{
+		padding-top: 60px;
+		margin-top: 0;
+	}
+
+	/*コンタクトページ*/
+
+	.contactWrap {
+		width: 90%;
+		}
+
+	textarea {
+		width: 100%;
+	}
+
+
+}
