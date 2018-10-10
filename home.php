@@ -25,7 +25,7 @@ Template Name: フロントページ
 			  </li>
 
 				<li>
-					<a href="#">
+					<a href="http://polepoleclub.jp/about.html" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide02.jpg" alt="PCスライド２" class="pc tablet"/>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide2_sp.jpg" alt="SPスライド2" class="smart"/>
 					</a>
