@@ -53,7 +53,8 @@
 
 </footer>
 
-    <div id="pagetop"><span class="top_triangle"></span></div><!--ページトップボタン-->
+<!--ページトップボタン-->
+    <div id="pagetop"><span class="top_triangle"></span></div>
 
 
 </div><!-- ラッパー終了 !-->
