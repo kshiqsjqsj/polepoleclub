@@ -30,10 +30,10 @@ $("document").ready(function(){
     });
 
 //SPナビアコーディオン
-	$(".sp_navi_parent").on("click",function(){
+	/*$(".sp_navi_parent").on("click",function(){
 		$(this).next().stop().slideToggle();
 		$(this).toggleClass("accordion_open");
-	});
+	});*/
 
 	//グローバルナビ固定
 	

@@ -34,6 +34,7 @@
 		width: 210px;
 		height: 40px;
 		top: 7px;
+		left: 4px;
 	}
 
 	#headerInner button.btn_menu {
@@ -95,6 +96,7 @@
 
 	.thumbnail-wrap,.newsText{
 		display: block;
+		width: 100%;
 	}
 
   .newsTopic a img {
@@ -137,6 +139,10 @@
 .archive-topic dd h3 {
 	margin: 0;
 }
+	
+	#sidebar-top{
+		max-width: 100%;
+	}	
 
 	/*サイドスライド*/
 
