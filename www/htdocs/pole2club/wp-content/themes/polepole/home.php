@@ -8,7 +8,7 @@ Template Name: フロントページ
 		<div class="flexslider">
 			<ul class="slides cf"><!-- 必ずクラスは slides -->
 				<li>
-				  <a href="http://polepoleclub.jp/about.html" target="_blank">
+				  <a href="#">
 					  <img src="<?php echo get_template_directory_uri(); ?>/img/slide01.jpg" alt="PCスライド１" class="pc tablet"/>
 				    <img src="<?php echo get_template_directory_uri(); ?>/img/slide1_sp.jpg" alt="SPスライド1" class="smart"/>
 				  </a>
@@ -25,7 +25,7 @@ Template Name: フロントページ
 			  </li>
 
 				<li>
-					<a href="http://polepoleclub.jp/about.html" target="_blank">
+					<a href="#">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide02.jpg" alt="PCスライド２" class="pc tablet"/>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide2_sp.jpg" alt="SPスライド2" class="smart"/>
 					</a>
@@ -50,8 +50,8 @@ Template Name: フロントページ
 					</a>
 						<div class="text_wrap">
 							<p class="text_innner">
-									<span class="slide_text_large">村人たちと守る“エデンの森”</span><br>
-								キリマンジャロに今も豊かな緑が残る“エデンの森”<br>
+									<span class="slide_text_large">村人たちと守るエデンの森</span><br>
+								キリマンジャロに今も豊かな緑が残るエデンの森<br>
 								村人たちは自慢のその楽園の森が危機を迎えています<br>
 								私たちは彼らと協力してこの森を守ろうとしています
 							</p>
@@ -70,7 +70,7 @@ Template Name: フロントページ
 									<span class="slide_text_large">Gallery</span><br>
 							</p>
 								<div class="read_wrap">
-								  <a href="https://www.instagram.com/tanzaniapole2club/?hl=ja" target="_blank" class="read_text">こちら</a>
+								  <a href="https://www.instagram.com/tanzaniapole2club/?hl=ja" target="_blank" class="read_text">詳しくはこちら</a>
 								</div>
 						 </div>
 			     </li>
@@ -158,8 +158,7 @@ Template Name: フロントページ
 
 							<div class="side_slide_subject">
 									<h2>収集活動</h2>
-									<p>収集活動によって蘇る森<br>
-								(同じ植林地の写真です)</p>
+									<p>収集活動によって蘇る森</p>
 							</div>
 							 <div id="side_slide"> 
 								  <div class="bk-img src1"></div>
@@ -167,8 +166,8 @@ Template Name: フロントページ
 								  <div class="bk-img src3"></div>
 							 </div>
 						  <div class="link_text">
-								<a href="http://polepoleclub.jp/stamp20160115.pdf" target="_blank">収集活動チラシダウンロード</a>
-								<a href="http://polepoleclub.jp/kakodata.html" target="_blank">企業のみなさま協力実績</a>
+								<a href="http://polepoleclub.jp/stamp20160115.pdf" target="_blank">チラシダウンロード</a>
+								<a href="http://polepoleclub.jp/kakodata.html" target="_blank">協力実績</a>
 						  </div>
 
 				  <div class="side_bannar">
