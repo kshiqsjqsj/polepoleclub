@@ -65,10 +65,12 @@ header {
 	box-shadow: 0 2px 4px rgba(102,102,102,0.3);
 	z-index: 1000;
 	position: relative;
+	background-color: rgba(255,255,255,.8);
 }
 
 header #headerInner {
 	width: 80%;
+	max-width: 1240px;
 	margin: 0 auto ;
 	height: 100%;
 	position: relative;
@@ -154,7 +156,7 @@ header #headerInner {
 
 #donation,#member {
 	background-color: red;
-	border: 1px solid white;
+	border: 1px solid rgba(255,255,255,.8);
 	box-sizing: border-box;
 	transition: all 0.5s ease-in-out;
 }
@@ -213,6 +215,7 @@ header #headerInner {
 	text-align: center;
 	margin: 0 auto;
 	width: 80%;
+	max-width: 1240px;
 }
 
 .gNavi  li {
@@ -225,6 +228,9 @@ header #headerInner {
 .gNavi ul li a {
 	padding: 8px 0;
 	display: block;
+	font-family: heisei-kaku-gothic-std, sans-serif;
+	font-weight: 300;
+	font-style: normal;
 	font-size: 18px;
 	line-height: 1.1;
 }
@@ -255,6 +261,7 @@ header #headerInner {
 	display: block;
 }
 
+/*gnaviサブテキスト設定*/
 .gNavi ul #menu-item-100 a::after,.gNavi ul #menu-item-104 a::after,.gNavi ul #menu-item-103 a::after,.gNavi ul #menu-item-102 a::after,.gNavi ul #menu-item-101 a::after,.gNavi ul #menu-item-105 a::after{
 	display: block;
 	font-size: 8px;
@@ -303,6 +310,7 @@ header #headerInner {
 .content {
 	margin:  30px auto 0;
 	width: 75%;
+	max-width: 1200px;
 }
 
 /*パンくずリスト*/
@@ -786,6 +794,7 @@ display: table-cell;
 .bannerArea {
 	padding:  50px 0 30px ;
 	width: 96%;
+	max-width: 1050px;
 	margin: 0 auto;
 	text-align: center;
 	clear: both;
@@ -816,6 +825,7 @@ footer {
 
 .footerInner {
 	width: 80%;
+	max-width: 1240px;
 	margin: 0 auto;
 }
 
