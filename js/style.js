@@ -7,7 +7,8 @@ $("document").ready(function(){
 	  animation: "slide",
 	  controlNav: "true",
 	  slideshowSpeed: 4000,
-	  animationSpeed: 1000
+	  animationSpeed: 1000,
+	  pauseOnAction: false
 	  });
 
 //会員ボタン、寄付ボタンホバー設定
