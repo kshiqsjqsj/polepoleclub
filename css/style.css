@@ -1,4 +1,8 @@
 @charset "utf-8";
+
+/*webフォント*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -200,6 +204,10 @@ header #headerInner {
 
  .triangle_hover_orange a > .triangle {
 	border-left: 5px solid #F15A24;
+}
+
+.smartGnavi{
+	display: none;
 }
 
 .gNavi {
@@ -641,7 +649,7 @@ display: table-cell;
 .side_slide_subject {
 	text-align: center;
 	width: 100%;
-	max-width: 300px;
+	
 	margin: 15px auto 5px;
 }
 
@@ -662,7 +670,7 @@ display: table-cell;
 #side_slide {
   position   : relative;
 	width: 100%;
-	max-width: 300px;
+	
   height     : 220px;
   margin     : auto;
   overflow   : hidden;

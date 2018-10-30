@@ -38,20 +38,10 @@
 	}
 
 	#headerInner button.btn_menu {
-    padding: 0;
-    width: 42px;
-	height: 42px;
-    color: green;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    position: absolute;
     top: -2px;
-    right: 0;
-    z-index: 1001;
   }
 
 	.smartGnavi {
-	display: none;
   top: 50px;
 	right: 0;
    }

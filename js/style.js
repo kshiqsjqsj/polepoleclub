@@ -27,14 +27,9 @@ $("document").ready(function(){
 
    $('.btn_menu').click(function(){
 		$(this).toggleClass('active');
-		$('.smartGnavi').stop().slideToggle();
+		$('.smartGnavi').toggleClass('open');
     });
 
-//SPナビアコーディオン
-	/*$(".sp_navi_parent").on("click",function(){
-		$(this).next().stop().slideToggle();
-		$(this).toggleClass("accordion_open");
-	});*/
 
 	//グローバルナビ固定
 	

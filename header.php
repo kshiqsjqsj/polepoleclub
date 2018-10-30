@@ -42,10 +42,10 @@
 				  <span class="bar bar1"></span>
 				  <span class="bar bar2"></span>
 				  <span class="bar bar3"></span>
-				  <span class="menu">MENU</span>
+				  <span class="menubtn">MENU</span>
 				  <span class="close">CLOSE</span>
 				</button>
-				<nav class="smartGnavi smart tablet">
+				<nav class="smartGnavi">
           <!--カスタムメニューモバイル-->
           <?php wp_nav_menu( array(
                   'theme_location' => 'mabailNavi',

@@ -44,14 +44,14 @@
     background: none;
     border: none;
     padding: 0;
-    width: 42px;
+    width: 36px;
 	height: 42px;
     color: green;
     letter-spacing: 0.1em;
     cursor: pointer;
     position: absolute;
     top: 7px;
-    right: 0;
+    right: 5px;
     z-index: 1001;
     text-align: center;
     outline: none;
@@ -60,7 +60,7 @@
   /*   ハンバーガーボタン3本線   */
   button.btn_menu span.bar {
     display: block;
-	width: 32px;
+	width:100%;
     height: 2px;
 	position: absolute;
     background-color: green;
@@ -81,17 +81,23 @@
 		bottom: 12px;
 	}
 
-	#headerInner button .menu,#headerInner button .close {
+	#headerInner button .menubtn,#headerInner button .close {
 		position: absolute;
 		bottom: -5px;
-		left: -2px;
+		left: 2px;
+	}
+	
+	.menubtn,.close{
+		font-family: 'Roboto', sans-serif;
+		font-size: 10px;
+		text-align: center;
 	}
 
 	  #headerInner button .close{
 		letter-spacing: 0;
 		display: none;
 	  }
-	  #headerInner button .menu {
+	  #headerInner button .menubtn {
 		display: block;
 	  }
 
@@ -110,39 +116,34 @@
         -ms-transform:translateY(-8px) rotate(-45deg);
             transform:translateY(-8px) rotate(-45deg);
   }
-  #headerInner button.active .menu {
+  #headerInner button.active .menubtn {
     display: none;
   }
   #headerInner button.active .close {
     display: block;
   }
 	
-/*アンドロイド用*/
-	
-	.android #headerInner button.btn_menu{
-		top: 4px;
-	}
-	
-	.android #headerInner button .menu{
-		display: none;
-	}
-	
-	.android #headerInner button .close{
-		display: none;
-	}
-
 	.smartGnavi {
-	display: none;
+		display: block;
+	opacity: 0;
     width: 100%;
-    height: 100%;
     position: fixed;
-	overflow: scroll;
     top: 70px;
     right: 0;
     z-index: 5000;
+	overflow: hidden;	
    /* background-color: rgba(255,255,255,0.8);*/
 	background-color: rgba(0,141,90,0.9);
+		-webkit-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+		transition-property: all;
    }
+	
+	.open {
+		opacity: 1;
+		height: 100%;
+	}
 
 	.smartGnavi li {
 	letter-spacing: 0.1em;
