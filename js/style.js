@@ -7,7 +7,8 @@ $("document").ready(function(){
 	  animation: "slide",
 	  controlNav: "true",
 	  slideshowSpeed: 4000,
-	  animationSpeed: 1000
+	  animationSpeed: 1000,
+	  pauseOnAction: false
 	  });
 
 //会員ボタン、寄付ボタンホバー設定
@@ -26,14 +27,9 @@ $("document").ready(function(){
 
    $('.btn_menu').click(function(){
 		$(this).toggleClass('active');
-		$('.smartGnavi').stop().slideToggle();
+		$('.smartGnavi').toggleClass('open');
     });
 
-//SPナビアコーディオン
-	/*$(".sp_navi_parent").on("click",function(){
-		$(this).next().stop().slideToggle();
-		$(this).toggleClass("accordion_open");
-	});*/
 
 	//グローバルナビ固定
 	
