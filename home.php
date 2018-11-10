@@ -8,46 +8,41 @@ Template Name: フロントページ
 		<div class="flexslider">
 			<ul class="slides cf"><!-- 必ずクラスは slides -->
 				<li>
-				  <a href="http://polepoleclub.jp/about.html" target="_blank">
-					  <img src="<?php echo get_template_directory_uri(); ?>/img/slide01.jpg" alt="PCスライド１" class="pc tablet"/>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/slide01.jpg" alt="PCスライド１" class="pc tablet"/>
 				    <img src="<?php echo get_template_directory_uri(); ?>/img/slide1_sp.jpg" alt="SPスライド1" class="smart"/>
-				  </a>
-  				<div class="text_wrap">
-  					<p class="text_innner">
-  						<span class="slide_text_large">世界遺産の森を守る</span><br>
-  						わたしたちは世界遺産キリマンジャロで<br>
-  						20年間村人たちと森林回復のための植林に取り組んでいます
-  					</p>
-  					  <div class="read_wrap">
-  						 <a href="#" class="read_text">詳しくはこちら</a>
-  					  </div>
-  				</div>
-			  </li>
+						<div class="text_wrap">
+							<p class="text_innner">
+								<span class="slide_text_large">世界遺産の森を守る</span><br>
+								わたしたちは世界遺産キリマンジャロで<br>
+								20年間村人たちと森林回復のための植林に取り組んでいます
+							</p>
+							  <div class="read_wrap">
+								 <a href="http://polepoleclub.jp/about.html" target="_blank" class="read_text">詳しくはこちら</a>
+							  </div>
+						</div>
+			     </li>
 
 				<li>
-					<a href="http://polepoleclub.jp/kaigai.html">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide02.jpg" alt="PCスライド２" class="pc tablet"/>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide2_sp.jpg" alt="SPスライド2" class="smart"/>
-					</a>
+							<div class="text_wrap">
+								<p class="text_innner">
+									<span class="slide_text_large">キリマンジャロの森はいま</span><br>
+									  キリマンジャロ山ではこの100年で<br>
+										3割の森林が失われ人々の生活を脅かしてます
+								</p>
 
-					<div class="text_wrap">
-						<p class="text_innner">
-							<span class="slide_text_large">キリマンジャロの森はいま</span><br>
-							  キリマンジャロ山ではこの100年で<br>
-								3割の森林が失われ人々の生活を脅かしてます
-						</p>
-
-						  <div class="read_wrap">
-							 <a href="#" class="read_text">詳しくはこちら</a>
-						  </div>
-				    </div>
+								  <div class="read_wrap">
+									 <a href="http://polepoleclub.jp/kaigai.html" target="_blank" class="read_text">詳しくはこちら</a>
+								  </div>
+							</div>
 				</li>
 
 				<li>
-					<a href="#">
+					
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide03.jpg" alt="PCスライド３" class="pc tablet"/>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide3_sp.jpg" alt="SPスライド3" class="smart"/>
-					</a>
+					
 						<div class="text_wrap">
 							<p class="text_innner">
 									<span class="slide_text_large">村人たちと守る“エデンの森”</span><br>
@@ -60,17 +55,17 @@ Template Name: フロントページ
 								</div>
 						 </div>
 			     </li>
+				
 				<li>
-					<a href="https://www.instagram.com/tanzaniapole2club/?hl=ja" target="_blank">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide04.jpg" alt="PCスライド4" class="pc tablet"/>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/slide04_sp.jpg" alt="SPスライド4" class="smart"/>
-					</a>
+					
 						<div class="text_wrap">
 							<p class="text_innner">
-									<span class="slide_text_large">Gallery</span><br>
+									<span class="slide_text_large english">Gallery</span><br>
 							</p>
 								<div class="read_wrap">
-								  <a href="https://www.instagram.com/tanzaniapole2club/?hl=ja" target="_blank" class="read_text">こちら</a>
+								  <a href="https://www.instagram.com/tanzaniapole2club/?hl=ja" target="_blank" class="read_text">こちらへ</a>
 								</div>
 						 </div>
 			     </li>

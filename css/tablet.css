@@ -124,7 +124,6 @@
   }
 	
 	.smartGnavi {
-		display: block;
 	opacity: 0;
     width: 100%;
     position: fixed;
@@ -142,6 +141,7 @@
 	
 	.open {
 		opacity: 1;
+		display: block;
 		height: 100%;
 	}
 
@@ -231,6 +231,14 @@
 
 	.newsTopic {
 		padding: 0 1%;
+	}
+	
+	.thumbnail-wrap {
+	width: 180px;
+	}
+	
+	.thumbnail-wrap img {
+	height: 140px;
 	}
 
 	.newsText {
