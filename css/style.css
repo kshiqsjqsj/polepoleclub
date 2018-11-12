@@ -280,6 +280,7 @@ font-style: normal;
 	margin-top: 5px;
 }
 
+/*gnaviサブテキスト挿入*/
 .gNavi ul #menu-item-100 > a::after{
 	content : "ニュース/お知らせ";
 }
@@ -323,30 +324,30 @@ font-style: normal;
 	max-width: 1200px;
 }
 
-/*パンくずリスト*/
-#breadcrumb {
-	margin-top: 10px;
-}
+		/*パンくずリスト*/
+		#breadcrumb {
+			margin-top: 10px;
+		}
 
-#breadcrumb ul {
-	overflow: hidden;
-}
+		#breadcrumb ul {
+			overflow: hidden;
+		}
 
-#breadcrumb ul li {
-	float: left;
-	margin: 0 0.5em;
-}
+		#breadcrumb ul li {
+			float: left;
+			margin: 0 0.5em;
+		}
 
-#breadcrumb ul li a {
-	color: #000;
-	text-decoration: underline;
-}
-
+		#breadcrumb ul li a {
+			color: #000;
+			text-decoration: underline;
+		}
+/*トップページのみメインエリア設定*/
 #top {
 	width: 60%;
 	float: left;
 }
-
+/*トップページ以外メインエリア設定*/
 .main_area {
 	width: 75%;
 	float: left;
@@ -411,7 +412,7 @@ font-style: normal;
 #more a:hover {
 	color: white;
 }
-
+/*トップページニュースリスト設定*/
 .newsTopic {
 	padding: 10px 10px 5px 35px;
 	margin-bottom: 40px;
@@ -651,7 +652,6 @@ display: table-cell;
 .side_slide_subject {
 	text-align: center;
 	width: 100%;
-	
 	margin: 15px auto 5px;
 }
 
@@ -725,6 +725,10 @@ display: table-cell;
 .link_text {
 	margin: 3% 0;
 	text-align: center;
+}
+
+.link_text:hover{
+	text-decoration: underline;
 }
 
 /*サイドバナー*/
@@ -840,7 +844,7 @@ footer {
 }
 
 
-
+/*フッターナビゲーション設定*/
 .footerNav{
 	width: 90%;
 	margin: 0 auto;
@@ -859,10 +863,6 @@ footer {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	justify-content: space-between;
-}
-
-.footerNav ul > li {
-
 }
 
 .footerNav ul > li > a{
@@ -906,7 +906,7 @@ footer {
 	margin: 0 auto;
 	padding: 15px 0;
 }
-
+/*フッターアクセスページ設定*/
 .access {
 	float: left;
 	width: 70%;
@@ -975,7 +975,7 @@ footer {
 	text-align: center;
 	line-height: 1.2;
 }
-
+/*ページトップスクロール設定*/
 #pagetop {
 	position: fixed;
 	bottom: 30px;

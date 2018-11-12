@@ -10,7 +10,6 @@
 		display: block;
 	}
 
-
 	header {
 		position: fixed;
 		top: 0;
@@ -38,7 +37,7 @@
 		height: auto;
 	}
 
-
+/*ハンバーガーボタン設定*/
 	#headerInner button.btn_menu {
     display: block;
     background: none;
