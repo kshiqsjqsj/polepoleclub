@@ -596,7 +596,12 @@ display: table-cell;
 
 .content_area p {
     display: block;
-    margin: 1em 0;
+   margin: 0.7em 0;
+}
+
+.content_area .wp-caption-text{
+	margin: 0;
+	width: 100%!important;
 }
 
 .content_area strong { font-weight: bold; }
@@ -612,16 +617,25 @@ display: table-cell;
 .content_area .aligncenter {
     display: block;
     margin: 0 auto;
+}
+.content_area .alignright { float: right; margin-right: 7%; }
+.content_area .alignleft { float: left; margin-left: 7%; }
+
+@media only screen and (max-width:800px){
+	.content_area .alignright,
+	.content_area .alignleft { 
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.content_area .wp-caption img {
 	width: 100%;
-}
-.content_area .alignright { float: right; }
-.content_area .alignleft { float: left; }
-
-.content_area img {
-	margin: 1em;
+	height: auto;
 }
 
-/* clearfix */
+/*
  
 .clearfix {
     overflow: hidden;
@@ -631,7 +645,7 @@ display: table-cell;
     content: "";
     display: block;
     clear: both;
-}
+}*/
 
 /*サイドバー*/
 
@@ -727,7 +741,7 @@ display: table-cell;
 	text-align: center;
 }
 
-.link_text:hover{
+.link_text a:hover{
 	text-decoration: underline;
 }
 
