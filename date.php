@@ -68,6 +68,7 @@ Template Name: 最新情報
     </article>
 
       <?php endwhile; endif; ?>
+	
       <!--ページネーション追加-->
       <div class="pagination">
         <?php echo paginate_links( array(

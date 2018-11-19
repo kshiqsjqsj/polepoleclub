@@ -52,7 +52,13 @@
   </div>
 
 </footer>
+<<<<<<< HEAD
 <!--ページトップボタン-->
+=======
+
+<!--トップスクロール-->
+
+>>>>>>> origin/master
     <div id="pagetop"><span class="top_triangle"></span></div>
 
 
