@@ -748,6 +748,10 @@ display: table-cell;
 	text-align: center;
 }
 
+.link_text a:hover{
+	text-decoration: underline;
+}
+
 /*サイドバナー*/
 .side_bannar {
 	margin: 30px 0;
