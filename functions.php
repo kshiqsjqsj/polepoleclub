@@ -3,6 +3,9 @@
 //サムネイル画像有効
 add_theme_support( 'post-thumbnails', array( 'post' ) );
 
+//投稿サムネイルサイズ指定
+add_image_size('thumb300',300,220,true);
+
 //ナビゲーションメニュー
 register_nav_menu( 'globalNavi' , 'グローバルナビ' );
 register_nav_menu( 'mabailNavi' , 'モバイルナビ');

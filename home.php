@@ -118,7 +118,7 @@ Template Name: フロントページ
 										<!--画像を追加-->
 						  <div class="thumbnail-wrap">
 											<?php if( has_post_thumbnail() ): ?>
-											<?php the_post_thumbnail('medium'); ?>
+											<?php the_post_thumbnail('thumb300'); ?>
 
 										<?php else: ?>
 											<img src="<?php echo get_template_directory_uri(); ?>/img/no-image.gif" alt="no-img"/>
