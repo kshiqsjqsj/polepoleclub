@@ -77,16 +77,16 @@ Template Name: フロントページ
 			</ul><!--sliders終了-->
 		</div><!--flexslider終了-->
 
-<div id="topGnavi" class="gNavi pc">
-    <!--カスタムメニュー-->
-    <?php wp_nav_menu( array(
-            'theme_location' => 'globalNavi',
-            'container' => 'nav',
-            'container_class' => 'navInner',
-            'container_id' => 'navInner',
-            'fallback_cb' => ''
-      ) ); ?>
-</div>
+		<div id="topGnavi" class="gNavi pc">
+			<!--カスタムメニュー-->
+			<?php wp_nav_menu( array(
+					'theme_location' => 'globalNavi',
+					'container' => 'nav',
+					'container_class' => 'navInner',
+					'container_id' => 'navInner',
+					'fallback_cb' => ''
+			  ) ); ?>
+		</div>
 		<div class="content cf">
 
 		<section class="main_area" id="top">
@@ -117,12 +117,12 @@ Template Name: フロントページ
 						<a href="<?php the_permalink(); ?>">
 										<!--画像を追加-->
 						  <div class="thumbnail-wrap">
-											<?php if( has_post_thumbnail() ): ?>
-											<?php the_post_thumbnail('thumb300'); ?>
+							<?php if( has_post_thumbnail() ): ?>
+							<?php the_post_thumbnail('thumb300'); ?>
 
-										<?php else: ?>
-											<img src="<?php echo get_template_directory_uri(); ?>/img/no-image.gif" alt="no-img"/>
-										<?php endif; ?>
+							　<?php else: ?>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/no-image.gif" alt="no-img"/>
+							　<?php endif; ?>
 						  </div>
 						  <div class="newsText">
 							<!--カテゴリ-->
@@ -133,17 +133,17 @@ Template Name: フロントページ
 							    </span>
 							  <?php endif; ?>
 							<?php endif; ?>
-											<!--投稿日を表示-->
-											<span class="kiji-date">
-												<i class="fas fa-pencil-alt"></i>
-												<time datetime="<?php echo get_the_date( 'Y/m/d' ); ?>">
-													<?php the_time('Y/m/d'); ?>
-												</time>
-											</span>
+							<!--投稿日を表示-->
+							  <span class="kiji-date">
+								<i class="fas fa-pencil-alt"></i>
+								<time datetime="<?php echo get_the_date( 'Y/m/d' ); ?>">
+									<?php the_time('Y/m/d'); ?>
+								</time>
+							  </span>
 
-											<!--タイトル-->
-											<h3><?php the_title(); ?></h3>
-										</div>
+							<!--タイトル-->
+							  <h3><?php the_title(); ?></h3>
+						    </div>
 						</a>
 				 </article>
 
@@ -151,6 +151,7 @@ Template Name: フロントページ
     				// ループ終了
     				// メインクエリの投稿データに戻す
     				wp_reset_postdata(); ?>
+			
             <div id="more_mobail" class="smart"><a href="http://polepoleclub.jp/pole2club/?page_id=85">一覧へ</a></div>
 				</section>
 

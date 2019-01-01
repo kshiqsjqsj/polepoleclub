@@ -3,7 +3,7 @@ $("document").ready(function(){
 
 //スライドショー設定
 
-    $('.flexslider').flexslider({
+    $(".flexslider").flexslider({
 	  animation: "slide",
 	  controlNav: "true",
 	  slideshowSpeed: 4000,

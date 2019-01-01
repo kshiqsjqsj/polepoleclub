@@ -124,7 +124,7 @@
   }
 	
 	.smartGnavi {
-		display: block;
+		display: none;
 	opacity: 0;
     width: 100%;
     position: fixed;
@@ -142,6 +142,7 @@
 	
 	.open {
 		opacity: 1;
+		display: block;
 		height: 100%;
 	}
 
@@ -206,23 +207,30 @@
 		max-width: 350px;
 		margin: 0 auto;
 		display: block;
+		background-color: green;
 	}
 
 	#more_mobail a {
 		display: block;
 		text-align: center;
-		padding: 5px 0;
-		color: green;
-		font-size: 14px;
+		height: 44px;
+		line-height: 44px;
+		color: white;
+		font-size: 16px;
+		font-weight: 400;
+		position: relative;
 	}
 
 	#more_mobail a::before {
 		content: "";
-		padding-right: 5px;
+		position: absolute;
+		left: 27px;
+		top: 50%;
 		  display: inline-block;
-		  border-top: 5px solid transparent;
-		  border-bottom: 5px solid transparent;
-		  border-left: 5px solid orange;
+		  border-top: 8px solid transparent;
+		  border-bottom: 8px solid transparent;
+		  border-left: 8px solid white;
+		transform: translateY(-50%);
 	}
 
 	.right_area {
