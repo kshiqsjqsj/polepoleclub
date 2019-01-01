@@ -51,7 +51,7 @@ h2,h3,h4 {
 }
 
 body {
-	font-family: 'Cambria','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', 'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	font-family: 'Cambria','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Yu Gothic','メイリオ', 'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 	line-height: 1.5;
 	font-size: 12px;
 	font-weight: 200;
@@ -374,6 +374,27 @@ header #headerInner {
 
 }
 
+/*記事ページタイトル周り*/
+.single-title {
+	margin-bottom: 5px;
+}
+
+.category-date-wrap {
+	margin-left: 0.5em;
+}
+
+.category-date-wrap span {
+	vertical-align: middle;
+}
+
+.category-date-wrap .category-area {
+	height: 18px;
+	line-height: 18px;
+	padding: 0 1px;
+	margin-right: 0.5em;
+	font-size: 10px;
+}
+
 #more {
 	position: absolute;
 	font-size: 14px;
@@ -462,7 +483,9 @@ time {
 /*カテゴリー設定*/
 .category-area {
 	display: inline-block;
-	padding:2px 2px 1px 1px;
+	padding: 0 2px;
+	height: 22px;
+	line-height: 22px;
 	color: white;
 	margin-right: 1em;
 }
@@ -574,6 +597,180 @@ display: table-cell;
 	  border-color: transparent;
 	  background-color: transparent;
 	}
+
+/*next prevボタン設定*/
+
+/*.prev-next-button {
+	text-align: center;
+}
+
+.prev-next-button a {
+	background-color: green;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	height: 70px;
+	width: 20%;
+	line-height: 18px;
+	padding: 0 7px;
+	margin: 0 2%;
+}*/
+
+
+
+ #prev_next{
+width:100%;
+margin: 36px 0 24px;
+padding:0;
+display: table;
+	 
+}
+
+
+#prev_next  #prev, #prev_next  #next,#list-center{
+	border: 1px solid #ccc;
+}
+
+#list-center {
+	border-left: none;
+	border-right: none;
+	line-height: 70px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 15%;
+	background-color: green;
+	color: white;
+	font-size: 18px;
+}
+
+
+ #prev_next  #prev, #prev_next  #next{
+width: 25%;
+padding:35px 10px 15px;
+border-top:#ccc 1px solid;
+border-bottom:#ccc 1px solid;
+display: table-cell;
+position:relative;
+text-decoration:none;
+color: black;
+	 font-size: 14px;
+}
+ #prev_next #prev p, #prev_next #next p,#list-center{
+font-family: 'Yu Gothic','メイリオ', sans-self;
+}
+#prev_next #prev:hover, #prev_next #next:hover, #list-center:hover{
+background-color: rgba(95,227,0, .40);
+}
+#prev_next #prev{
+border-right:#ccc 1px solid;
+}
+#prev_next #prev_title, #prev_next #next_title{
+font-size: 14px;
+top: 0;
+position:absolute; 
+text-align: center;
+padding:2px 4px 1px 4px;
+}
+
+#prev_title,#next_title {
+	height: 20px;
+	line-height: 20px;
+	background-color: green;
+	color: white;
+}
+
+#prev_title{
+	left: 0;
+}
+
+#next_title{
+	right: 0;
+}
+
+#prev_next_home{
+display: none;	
+}
+#prev_next_home:hover{
+display: none;
+}
+#prev_next_home i{
+display: none; 
+}
+
+/*#prev_next #next_title{
+right:10px;
+}*/
+#prev_next #prev img, #prev_next #next img{
+margin:0 auto;
+width: 80px;
+height: 65px;
+	object-fit: cover;
+}
+
+#prev_next #prev img{
+float:left;
+margin-right:10px
+}
+#prev_next #next img{
+float:right;
+margin-left: 10px;
+}
+
+#prev_next #prev_no, #prev_next #next_no{
+width: 20%;
+height:140px;
+padding:0 10px;
+display: table-cell;
+}
+#prev_next #prev_no{
+border-right:#ccc 1px solid;
+}
+#prev_next_home{
+margin:0 auto;
+background-color: #39f;
+border: solid 9px #fff;
+width: 100px;
+height:100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border-radius: 100px;
+box-shadow: 0 0 0 3px #39f;
+text-align:center;	
+}
+#prev_next_home:hover{
+background-color: rgba(0,0,255,0.7);
+}
+#prev_next_home i{
+color:#FFF;
+margin:10px auto ;
+font-size:60px;
+}
+
+@media only screen and (max-width:1024px){
+	#list-center {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:600px){
+	
+	
+	#prev_next #prev img,#prev_next #next img{
+		margin: 0 1%;
+	}
+	
+	#prev_next #prev img {
+		margin-right: 3%;
+	}
+}
+
+@media only screen and (max-width:480px){
+	
+		#prev_next #prev img, #prev_next #next img{
+		display: none;
+		}
+}
 
 
 /*ワードプレス記述欄 */
@@ -1042,8 +1239,6 @@ footer {
 	width: 100%;
 	vertical-align: bottom;
 }
-
-
 
 /*コンタクトページ*/
 
