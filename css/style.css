@@ -264,7 +264,7 @@ header #headerInner {
 	background-color: rgba(0,137,53,0.8);
 }
 
-.gNavi  li:hover .sub-menu{
+.gNavi  li:hover .sub-menu {
 	display: block;
 }
 
@@ -286,7 +286,7 @@ header #headerInner {
 }
 
 .gNavi ul #menu-item-103 > a::after{
-	content : "海外活動/国内活動";
+	content : "海外情報/情報一覧";
 }
 
 .gNavi ul #menu-item-102 > a::after{
@@ -389,7 +389,7 @@ header #headerInner {
 .category-date-wrap .category-area {
 	height: 18px;
 	line-height: 18px;
-	padding: 0 1px;
+	padding: 0 5px;
 	margin-right: 0.5em;
 	font-size: 10px;
 }
@@ -599,24 +599,6 @@ display: table-cell;
 
 /*next prevボタン設定*/
 
-/*.prev-next-button {
-	text-align: center;
-}
-
-.prev-next-button a {
-	background-color: green;
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 16px;
-	height: 70px;
-	width: 20%;
-	line-height: 18px;
-	padding: 0 7px;
-	margin: 0 2%;
-}*/
-
-
-
  #prev_next{
 width:100%;
 margin: 36px 0 24px;
@@ -632,14 +614,13 @@ display: flex;
 }
 
 #prev,#next,#list-center {
-	/*height: 105px;
-	overflow: hidden;*/
+	height: 105px;
 }
 
 #list-center {
 	border-left: none;
 	border-right: none;
-	line-height: 70px;
+	line-height: 102px;
 	text-align: center;
 	width: 15%;
 	background-color: green;
@@ -649,7 +630,7 @@ display: flex;
 
 
  #prev_next  #prev, #prev_next  #next{
-width: 37%;
+width: 39%;
 padding:28px 10px 10px;
 border-top:#ccc 1px solid;
 border-bottom:#ccc 1px solid;
@@ -754,6 +735,10 @@ font-size:60px;
 @media only screen and (max-width:1024px){
 	#list-center {
 		display: none;
+	}
+	
+	#prev_next #prev,#prev_next #next {
+		width: 50%;
 	}
 }
 
@@ -1106,23 +1091,34 @@ footer {
 	position: absolute;
 	display: inline-block;
 	left: 2px;
-	top: 3px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-left: 6px solid orange;
 }
 
-.footerNav ul #menu-item-221 > .sub-menu li a{
+.footerNav ul #menu-item-223 a {
 	padding-left: 0;
 }
 
-.footerNav ul #menu-item-221 > .sub-menu li a::before {
+.footerNav ul #menu-item-223 a::before {
 	border: none;
 }
 
-.footerNav ul #menu-item-223,.footerNav ul #menu-item-224{
-	display: none;
+.footerNav ul #menu-item-223 > .sub-menu li a::before {
+	border: none;
 }
+
+.footerNav ul #menu-item-220,.footerNav ul #menu-item-223 {
+	display: block;
+}
+
+/*.footerNav ul #menu-item-223,.footerNav ul #menu-item-224{
+	display: none;
+}*/
 
 .footerBottom {
 	width: 100%;

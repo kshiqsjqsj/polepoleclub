@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: 最新情報
-*/
- ?>
 
 
 <?php get_header(); ?>
@@ -31,6 +26,11 @@ Template Name: 最新情報
 <section class="main_area">
           <div class="title cf">
               <h2 class="date-category-listTitle"><?php echo get_the_date('Y年'); ?>の一覧</h2>
+			  <div id="more" class="pc">
+					<a href="http://polepoleclub.jp/pole2club/?page_id=3147">
+						<span class="triangle" id="more_triangle"></span>
+					 一覧へ</a>
+			  </div>
           </div>
 
 
@@ -79,6 +79,10 @@ Template Name: 最新情報
           ) ); ?>
       </div>
         <?php wp_reset_query(); ?>
+					<div id="more_mobail" class="smart">
+						<a href="http://polepoleclub.jp/pole2club/?page_id=3147">一覧へ</a>
+					</div>
+
 </section>
 
   <aside class="right_area">

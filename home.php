@@ -93,7 +93,7 @@ Template Name: フロントページ
 
 			  <div class="title cf">
 				<h2>WHAT'S NEW<span class="newsSub">最新情報</span></h2>
-				<div id="more" class="pc"><a href="http://polepoleclub.jp/pole2club/?page_id=85"><span class="triangle" id="more_triangle">       </span>一覧へ</a>
+				<div id="more" class="pc"><a href="http://polepoleclub.jp/pole2club/?page_id=3147"><span class="triangle" id="more_triangle">       </span>一覧へ</a>
 				</div>
 			  </div>
 
@@ -152,7 +152,9 @@ Template Name: フロントページ
     				// メインクエリの投稿データに戻す
     				wp_reset_postdata(); ?>
 			
-            <div id="more_mobail" class="smart"><a href="http://polepoleclub.jp/pole2club/?page_id=85">一覧へ</a></div>
+					<div id="more_mobail" class="smart">
+						<a href="http://polepoleclub.jp/pole2club/?page_id=3147">一覧へ</a>
+					</div>
 				</section>
 
 				<aside class="right_area" id="sidebar-top">
@@ -182,6 +184,11 @@ Template Name: フロントページ
 							  ?>/img/banner_volunteer.jpg" alt="ボランテイア募集"></a>
 					  </div>
 				  </div>
+					
+				  <div class="list-wrappre">
+					 <?php dynamic_sidebar( 'list-widget' ); ?>
+				  </div>
+					
 			    </aside>
 
 			<aside>
