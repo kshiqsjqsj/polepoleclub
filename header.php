@@ -78,10 +78,8 @@
 
 				<div class="icons pc">
 					<ul>
-						<li class="button_wrap" id="member"><a href="http://polepoleclub.jp/kaiin.html"  target="_blank" class="button_text">
-							<span class="triangle"></span>会員になる</a></li>
-						<li class="button_wrap" id="donation"><a href="http://polepoleclub.jp/kihu.html" target="_blank" class="button_text">
-							<span class="triangle"></span>寄付をする</a></li>
+						<li class="button_wrap"><a href="http://polepoleclub.jp/kaiin.html"  target="_blank" class="button_text"  id="member">会員になる</a></li>
+						<li class="button_wrap"><a href="http://polepoleclub.jp/kihu.html" target="_blank" class="button_text" id="donation">寄付をする</a></li>
 						<li><a href="https://www.facebook.com/TanzaniaPolePoleClub" target="_blank">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/fb_icon.png" alt="フェイスブックリンク"></a></li>
 						<li><a href="https://twitter.com/tanzania_pole2" target="_blank">

@@ -93,7 +93,7 @@ Template Name: フロントページ
 
 			  <div class="title cf">
 				<h2>WHAT'S NEW<span class="newsSub">最新情報</span></h2>
-				<div id="more" class="pc"><a href="http://polepoleclub.jp/pole2club/?page_id=3147"><span class="triangle" id="more_triangle">       </span>一覧へ</a>
+				<div id="more" class="pc"><a href="http://polepoleclub.jp/pole2club/?page_id=3147">一覧へ</a>
 				</div>
 			  </div>
 
@@ -169,9 +169,9 @@ Template Name: フロントページ
 								  <div class="bk-img src2"></div>
 								  <div class="bk-img src3"></div>
 							 </div>
-						  <div class="link_text">
-								<a href="http://polepoleclub.jp/stamp20160115.pdf" target="_blank">収集活動チラシダウンロード</a>
-								<a href="http://polepoleclub.jp/kakodata.html" target="_blank">企業のみなさま協力実績</a>
+						  <div class="link-text">
+								<a href="http://polepoleclub.jp/stamp20160115.pdf" target="_blank" id="download">収集活動チラシダウンロード</a>
+								<a href="http://polepoleclub.jp/kakodata.html" target="_blank" id="corporate-achievements">企業のみなさま協力実績</a>
 						  </div>
 
 				  <div class="side_bannar">
