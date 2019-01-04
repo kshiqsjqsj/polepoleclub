@@ -135,7 +135,6 @@ Template Name: フロントページ
 							<?php endif; ?>
 							<!--投稿日を表示-->
 							  <span class="kiji-date">
-								<i class="fas fa-pencil-alt"></i>
 								<time datetime="<?php echo get_the_date( 'Y/m/d' ); ?>">
 									<?php the_time('Y/m/d'); ?>
 								</time>

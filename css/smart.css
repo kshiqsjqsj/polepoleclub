@@ -48,11 +48,11 @@
 	
 	.content {
 		width: 96%;
-		margin: 0 auto;
+		margin: 40px auto ;
 	}
 
 	.main_area {
-		margin: 25px 0 50px;
+		margin-bottom: 80px;
 	}
 
 	.main_area,.right_area,#top,#sidebar-top {
@@ -91,13 +91,13 @@
 
   .newsTopic a img {
 	width: 100%;
-	height: 230px;  
+	height: auto;  
   margin: 0 auto;
 	}
 
 	.newsText {
 		width: 100%;
-	padding-top: 10px;
+	padding-top: 0;
 	padding-left: 0;
 	}
 
@@ -115,7 +115,9 @@
 }
 	
 	.archive-topic .category-area {
-		width: 25%;
+		width: auto;
+		white-space: nowrap;
+		padding: 0 10px;
 	}
 	
 	.archive-topic .kiji-date {
@@ -148,9 +150,14 @@
 	.link_text{
 		text-align: center;
 	}
+	
+	.side_banner {
+		margin: 80px 0;
+	}
 
 	/*カテゴリ、アーカイブリストバー*/
 		.list-wrappre {
+			margin: 80px 0; 
 			padding: 0;
 		}
 

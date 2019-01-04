@@ -37,7 +37,6 @@
 
     <article <?php post_class( 'newsTopic archive-topic' ); ?>>
       <a href="<?php the_permalink(); ?>">
-         
                 <!--カテゴリ-->
 
                   <span class="category-area <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">

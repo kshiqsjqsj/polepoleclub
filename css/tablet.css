@@ -189,11 +189,25 @@
 
 	.content {
 		width: 92%;
-		margin: 25px auto 0;
+		margin: 40px auto ;
 	}
 
+	
+	#top {
+	width: 63%;
+	}
+	
 	.main_area {
 		width: 65%;
+	}
+	
+	#sidebar-top {
+	width: 30%;
+	max-width: 300px;
+}
+	
+	.right_area {
+		width: 30%;
 	}
 	
 	.title h2 {
@@ -233,17 +247,18 @@
 		transform: translateY(-50%);
 	}
 
-	.right_area {
-		width: 30%;
-	}
-
 	.newsTopic {
 		padding: 0 1%;
 	}
 
 	.newsText {
 		padding-left: 5%;
+		width: 40%;
 	}
+	
+	.thumbnail-wrap {
+	width: 180px;
+}
 
 
 	.footerInner {

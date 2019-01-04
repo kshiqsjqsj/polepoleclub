@@ -309,7 +309,7 @@ header #headerInner {
 /*メインコンテンツエリア*/
 
 .content {
-	margin:  30px auto 0;
+	margin:  90px auto 0;
 	width: 75%;
 	max-width: 1200px;
 }
@@ -334,13 +334,27 @@ header #headerInner {
 }
 
 #top {
-	width: 66%;
+	width: 63%;
 	float: left;
 }
 
 .main_area {
 	width: 75%;
 	float: left;
+}
+
+/*サイドバー*/
+
+/*トップページのみ*/
+#sidebar-top {
+	width: 25%;
+	max-width: 300px;
+}
+/*トップページ以外*/
+.right_area {
+	float: right;
+	width: 20%;
+	
 }
 
 .title {
@@ -478,19 +492,19 @@ header #headerInner {
 	width: 100%;
 }
 
-time {
-	width: 8em;
+.kiji-date {
+	width: 6em;
 	font-size: 14px;
 }
 
 /*カテゴリー設定*/
 .category-area {
 	display: inline-block;
-	padding: 0 2px;
+	padding: 0 6px;
 	height: 22px;
 	line-height: 22px;
 	color: white;
-	margin-right: 1em;
+	margin-right: 5px;
 }
 /*ニュースレター*/
 .news-letter{
@@ -521,63 +535,35 @@ time {
 	justify-content: space-between;
 }
 
-
 .archive-topic  .category-area {
 		width: 11em;
 		text-align: center;
-		letter-spacing: -0.1em;
 		margin: 0;
 
 	}
-.kiji-date {
+.archive-topic .kiji-date {
 	margin-left: 2%;
 	margin-right: 3%;
+	width: 5em;
 }
 
 .kiji-date time {
-	width: 12%;
+	width: 8%;
 	letter-spacing: -0.1em;
 }
-
 
 .archive-topic .archive-title {
 		width: 70%;
 		overflow: hidden;
 		padding-right: 0;
 	}
-
-.archive-topic dl {
-	height: 2em;
-	width: 96%;
-	display: table;
-	table-layout: fixed;
-}
-
-.archive-topic dt,.archive-topic dd  {
-display: table-cell;
-	vertical-align: middle;
-	padding-right: 1.5em;
-	width: 12%;
-}
-
-
-@media only screen and (max-width:1024px){
-	
-	.archive-topic .archive-title h3{
+.archive-topic .archive-title h3 {
+	overflow: hidden;
+	word-break: break-all;
 	text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-		width: 240px;
-	}
+	white-space: nowrap;
+	width: 100%;
 }
-
-	.archive-topic .archive-title h3 {
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-		word-break: break-all;
-		width: 100%;
-	}
 
 	/*ページネーション設定*/
 	.pagination {
@@ -845,10 +831,6 @@ font-size:60px;
 	
 }
 
-.content_area img {
-	
-}
-
 /* ワードプレス記述欄clearfix */
  
 .clearfix {
@@ -861,19 +843,6 @@ font-size:60px;
     clear: both;
 }
 
-/*サイドバー*/
-
-/*トップページのみ*/
-#sidebar-top {
-	width: 30%;
-	max-width: 300px;
-}
-/*トップページ以外*/
-.right_area {
-	float: right;
-	width: 20%;
-	
-}
 
 /*サイドスライドエリア*/
 
@@ -901,10 +870,21 @@ font-size:60px;
 #side_slide {
   position   : relative;
 	width: 100%;
-	
-  height     : 220px;
+  height     : 28vh;
   margin     : auto;
   overflow   : hidden;
+}
+
+@media only screen and (max-width:800px){
+	#side_slide {
+		height: 25vh;
+	}
+}
+
+@media only screen and (max-width:600px){
+	#side_slide {
+		height: 22vhpx;
+	}
 }
 
 /* --- 背景の指定 ------------------------------------------- */
@@ -952,29 +932,53 @@ font-size:60px;
 }
 
 .link-text {
-	margin-top: 20px;
+	margin: 20px auto 0;;
 	text-align: center;
+	width: 96%;
+	max-width: 320px;
 }
 
 #download,#corporate-achievements {
-	height: 33px;
-	line-height: 33px;
+	position: relative;
+	height: 38px;
+	line-height: 38px;
 	color: white;
 	text-align: center;
 	padding: 0 12px;
+	
+	border-radius: 3px;
+	
 }
 
 .link-text a:hover{
-	text-decoration: underline;
+	opacity: 0.8;
 }
+
+/*.link-text a::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+	border-left: 7px solid white;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}*/
 
 .link-text #download {
 	background-color: #ff9900;
+	border-bottom:solid 3px #B4653F;
 	margin-bottom: 5px;
 }
 
 .link-text #corporate-achievements {
 	background-color: red;
+	border-bottom:solid 3px #7F2122;
 }
 
 /*サイドバナー*/
