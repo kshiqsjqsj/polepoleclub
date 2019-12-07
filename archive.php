@@ -24,10 +24,12 @@ Template Name: 最新情報
       ) ); ?>
 </div>
 
+
+		<div class="inner"><?php breadcrumb(); ?></div>
+
 		<div class="content cf">
 
-        <?php breadcrumb(); ?>
-
+        
 				<section class="main_area">
           <div class="title cf">
             <h2>最新情報一覧</h2>

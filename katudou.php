@@ -14,15 +14,41 @@ Template Name: 活動概要
 
 
  <div class="gNavi pc">
-   <!--カスタムメニュー-->
-   <?php wp_nav_menu( array(
-           'theme_location' => 'globalNavi',
-           'container' => 'nav',
-           'container_class' => 'navInner',
-           'container_id' => 'navInner',
-           'fallback_cb' => ''
-     ) ); ?>
-   </div>
+    <nav>
+      <ul class="navInner">
+        <li><a href="<?php home_url(); ?>">HOME<br>
+          <span class="naviSub">最新情報</span></a> </li>
+        <li><a href="<?php home_url(); ?>adout">団体概要<br>
+          <span class="naviSub">組織/年次報告,計画</span></a>
+        </li>
+        <li><a href="<?php home_url(); ?>adout-katudou">活動概要<br>
+          <span class="naviSub">海外活動/情報一覧</span></a>
+          <ul class="sub-menu">
+            <li><a href="<?php home_url(); ?>adout-katudou/gaiyou">活動概要(海外/国内)</a></li>
+            <li><a href="<?php home_url(); ?>adout-katudou/news-list/">最新情報一覧</a></li>
+          </ul>
+        </li>
+        <li><a href="<?php home_url(); ?>support">支援/参加方法<br>
+          <span class="naviSub">個人/企業の皆様へ</span></a>
+          <ul class="sub-menu">
+            <li><a href="<?php home_url(); ?>">会員になるには</a></li>
+            <li><a href="<?php home_url(); ?>">ご寄付（植林/養蜂等）</a></li>
+            <li><a href="<?php home_url(); ?>">マンスリーサポータ（会員/寄付）</a></li>
+            <li><a href="<?php home_url(); ?>">企業団体のみなさまへ</a></li>
+            <li><a href="<?php home_url(); ?>">アルバイト/ボランティア募集</a></li>
+            <li><a href="<?php home_url(); ?>">壁紙募金</a></li>
+          </ul>
+        </li>
+        <li><a href="<?php home_url(); ?>yotei">活動予定<br>
+          <span class="naviSub">イベント/ミーティング</span></a>
+        </li>
+        <li><a href="<?php home_url(); ?>contact">お問い合わせ<br>
+          <span class="naviSub">お問い合わせフォーム</span></a> </li>
+      </ul>
+    </nav>
+  </div>
+
+
 
   <div class="content cf">
 <?php breadcrumb(); ?>
@@ -43,28 +69,8 @@ Template Name: 活動概要
     <?php  endif; ?>
 
 			<aside class="right_area">
-				  <div class="list-wrappre">
-							<?php
-					  // 指定したIDの子孫を階層でリスト表示
-					  $parent = "70";
-					  $args=array(
-						'child_of' => $parent
-					  );
-					  $pages = get_pages($args);
-					  if ($pages) {
-						$pageids = array();
-						foreach ($pages as $page) {
-						  $pageids[]= $page->ID;
-						}
-						$args=array(
-						  'title_li' => '',
-						  'include' =>  $parent . ',' . implode(",", $pageids)
-						);
-						wp_list_pages($args);
-					  }
-					  ?>
-				  </div>
-				</aside>
+				<?php get_sidebar(2); ?>	  
+			</aside>
 	  
 				<aside>
 					<div class="bannerArea">

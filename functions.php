@@ -16,8 +16,7 @@ function widgetarea_init() {
   register_sidebar(array(
       'name'=>'リストページ',
       'id' => 'list-widget',
-      'before_widget' => '<div>',
-      'after_widget' => '</div>',
+      
       ));
 }
 add_action( 'widgets_init', 'widgetarea_init' );

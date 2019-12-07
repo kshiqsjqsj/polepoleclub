@@ -215,37 +215,6 @@
 	}
 
 	
-	#more_mobail {
-		border: solid 1px green;
-		width: 85%;
-		max-width: 350px;
-		margin: 0 auto;
-		display: block;
-		background-color: green;
-	}
-
-	#more_mobail a {
-		display: block;
-		text-align: center;
-		height: 44px;
-		line-height: 44px;
-		color: white;
-		font-size: 16px;
-		font-weight: 400;
-		position: relative;
-	}
-
-	#more_mobail a::before {
-		content: "";
-		position: absolute;
-		left: 27px;
-		top: 50%;
-		  display: inline-block;
-		  border-top: 8px solid transparent;
-		  border-bottom: 8px solid transparent;
-		  border-left: 8px solid white;
-		transform: translateY(-50%);
-	}
 
 	.newsTopic {
 		padding: 0 1%;

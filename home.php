@@ -4,8 +4,7 @@ Template Name: フロントページ
 */
  ?>
 
-<?php get_header(); ?>
-		<div class="flexslider">
+<?php get_header(); ?><div class="flexslider">
 			<ul class="slides cf"><!-- 必ずクラスは slides -->
 				<li>
 				  <a href="http://polepoleclub.jp/about.html" target="_blank">
@@ -77,33 +76,58 @@ Template Name: フロントページ
 			</ul><!--sliders終了-->
 		</div><!--flexslider終了-->
 
+		
 		<div id="topGnavi" class="gNavi pc">
-			<!--カスタムメニュー-->
-			<?php wp_nav_menu( array(
-					'theme_location' => 'globalNavi',
-					'container' => 'nav',
-					'container_class' => 'navInner',
-					'container_id' => 'navInner',
-					'fallback_cb' => ''
-			  ) ); ?>
-		</div>
-		<div class="content cf">
+    <nav>
+      <ul class="navInner">
+        <li><a href="<?php home_url(); ?>">HOME<br>
+          <span class="naviSub">最新情報</span></a> </li>
+        <li><a href="<?php home_url(); ?>adout">団体概要<br>
+          <span class="naviSub">組織/年次報告,計画</span></a>
+        </li>
+        <li><a href="<?php home_url(); ?>adout-katudou">活動概要<br>
+          <span class="naviSub">海外活動/情報一覧</span></a>
+          <ul class="sub-menu">
+            <li><a href="<?php home_url(); ?>adout-katudou/gaiyou">活動概要(海外/国内)</a></li>
+            <li><a href="<?php home_url(); ?>adout-katudou/news-list/">最新情報一覧</a></li>
+          </ul>
+        </li>
+        <li><a href="<?php home_url(); ?>support">支援/参加方法<br>
+          <span class="naviSub">個人/企業の皆様へ</span></a>
+          <ul class="sub-menu">
+            <li><a href="<?php home_url(); ?>">会員になるには</a></li>
+            <li><a href="<?php home_url(); ?>">ご寄付（植林/養蜂等）</a></li>
+            <li><a href="<?php home_url(); ?>">マンスリーサポータ（会員/寄付）</a></li>
+            <li><a href="<?php home_url(); ?>">企業団体のみなさまへ</a></li>
+            <li><a href="<?php home_url(); ?>">アルバイト/ボランティア募集</a></li>
+            <li><a href="<?php home_url(); ?>">壁紙募金</a></li>
+          </ul>
+        </li>
+        <li><a href="<?php home_url(); ?>yotei">活動予定<br>
+          <span class="naviSub">イベント/ミーティング</span></a>
+        </li>
+        <li><a href="<?php home_url(); ?>contact">お問い合わせ<br>
+          <span class="naviSub">お問い合わせフォーム</span></a> </li>
+      </ul>
+    </nav>
+  </div>
+		<div class="content cf" id="front">
 
 		<section class="main_area" id="top">
 
 			  <div class="title cf">
 				<h2>WHAT'S NEW<span class="newsSub">最新情報</span></h2>
-				<div id="more" class="pc"><a href="http://polepoleclub.jp/pole2club/?page_id=3147">一覧へ</a>
+				<div id="more" class="pc"><a href="<?php home_url(); ?>adout-katudou/news-list/">一覧へ</a>
 				</div>
 			  </div>
 
 				
-					<?php
+		<?php
 				// WP_Queryのパラメータを指定,新着情報5件抜粋
 				$args = array(
 				    'posts_per_page' => 5,
 				    'orderby' => 'date',
-            'order' => 'DESC'
+            		'order' => 'DESC'
 				);
 				// WP_Queryクラスのインスタンスを作成
 				$the_query = new WP_Query( $args );
@@ -126,13 +150,9 @@ Template Name: フロントページ
 						  </div>
 						  <div class="newsText">
 							<!--カテゴリ-->
-							<?php if (!is_category()): ?>
-							  <?php if( has_category() ): ?>
-								<span class="category-area <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-								  <?php $postcat=get_the_category(); echo $postcat[0]->name; ?>
-							    </span>
-							  <?php endif; ?>
-							<?php endif; ?>
+							 <span class="category-area <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
+                  <?php $postcat=get_the_category(); echo $postcat[0]->name; ?>
+                  </span>
 							<!--投稿日を表示-->
 							  <span class="kiji-date">
 								<time datetime="<?php echo get_the_date( 'Y/m/d' ); ?>">
@@ -146,13 +166,13 @@ Template Name: フロントページ
 						</a>
 				 </article>
 
-    				<?php endwhile;
+    		<?php endwhile;
     				// ループ終了
     				// メインクエリの投稿データに戻す
-    				wp_reset_postdata(); ?>
+    		wp_reset_postdata(); ?>
 			
 					<div id="more_mobail" class="smart">
-						<a href="http://polepoleclub.jp/pole2club/?page_id=3147">一覧へ</a>
+						<a href="<?php home_url(); ?>adout-katudou/news-list/">一覧へ</a>
 					</div>
 				</section>
 
