@@ -24,10 +24,12 @@ Template Name: 最新情報
       ) ); ?>
 </div>
 
+
+		<div class="inner"><?php breadcrumb(); ?></div>
+
 		<div class="content cf">
 
-        <?php breadcrumb(); ?>
-
+        
 				<section class="main_area">
           <div class="title cf">
             <h2>最新情報一覧</h2>
@@ -36,8 +38,7 @@ Template Name: 最新情報
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>
                   <article <?php post_class( 'newsTopic archive-topic' ); ?>>
                     <a href="<?php the_permalink(); ?>">
-                      <dl>
-                          <dt>
+                      
                             <!--カテゴリ-->
                             <?php if (!is_category()): ?>
                               <?php if( has_category() ): ?>
@@ -47,21 +48,18 @@ Template Name: 最新情報
                               <?php endif; ?>
                             <?php endif; ?>
 
-                          </dt>
-                        <dd>
                           <!--投稿日を表示-->
                             <span class="kiji-date">
-                              <i class="fas fa-pencil-alt"></i>
                               <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
                               	<?php the_time('Y/m/d'); ?>
                               </time>
                             </span>
-                        </dd>
-                          <dd class="archive-title">
+                        
+                          <div class="archive-title">
                           <!--タイトル-->
                           <h3><?php the_title(); ?></h3>
-                        </dd>
-                     </dl>
+                        </div>
+                     
                     </a>
                   </article>
               <?php endwhile; endif; ?><!--ループ終了-->

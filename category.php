@@ -37,29 +37,25 @@
 
     <article <?php post_class( 'newsTopic archive-topic' ); ?>>
       <a href="<?php the_permalink(); ?>">
-          <dl>
-              <dt>
                 <!--カテゴリ-->
 
                   <span class="category-area <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
                   <?php $postcat=get_the_category(); echo $postcat[0]->name; ?>
                   </span>
 
-              </dt>
-            <dd>
+             
               <!--投稿日を表示-->
                 <span class="kiji-date">
-                  <i class="fas fa-pencil-alt"></i>
                   <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
                     <?php the_time('Y/m/d'); ?>
                   </time>
                 </span>
-            </dd>
-              <dd class="archive-title">
+           
+              <div class="archive-title">
               <!--タイトル-->
               <h3><?php the_title(); ?></h3>
-            </dd>
-         </dl>
+		     </div>
+         
       </a>
     </article>
 

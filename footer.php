@@ -1,15 +1,8 @@
 <footer>
 
   <div class="footerInner">
-       <!--フッターカスタムメニュー-->
-       <?php wp_nav_menu( array(
-               'theme_location' => 'footerNavi',
-               'container' => 'div',
-               'container_class' => 'footerNav',
-               'container_id' => 'footerNav',
-               'fallback_cb' => ''
-         ) ); ?>
-
+     
+	  
     <div class="footerBottom cf">
       <div class="access cf">
         <div class="cf" id="footer_logo">
@@ -19,13 +12,13 @@
 			  <h4>タンザニア・ポレポレクラブ</h4>
 			  <p>
 				<span class="large">事務所</span>
-				<address>〒154-0016 東京都世田谷区弦巻1-28-15サンライトハイツ301</address>
+				<address>東京都調布市東つつじケ丘2-39-11アザレアヒルズ203</address>
 				<span class="large">E-mail</span>
-				pole2club@hotmail.com	<br>
+				pole2club@gmail.com	<br>
 				<span class="large">本部</span>
 				<address>〒107-0062 東京都港区南青山6-1-32-103</address>
 				<span class="large">TEL/FAX</span>
-				03-4389-4817
+				03-3300-7234
 			  </p>
 			<p id="accessButton"><a href="http://polepoleclub.jp/pole2club/?page_id=28">詳しく見る</a></p>
         </div>
@@ -40,6 +33,19 @@
 		</div>
 
     </div><!-- フッターボトム終了 !-->
+	
+	  <div class="footerNav pc">
+		 <ul class="footerNaviCollam">
+          <li><a href="<?php home_url(); ?>" class="naviTop">HOME</a></li>
+          <li><a href="<?php home_url(); ?>adout" class="naviTop">団体概要</a></li>
+          <li><a href="<?php home_url(); ?>adout-katudou" class="naviTop">活動概要</a></li>
+          <li><a href="#" class="naviTop">支援/参加方法</a></li>
+          <li><a href="<?php home_url(); ?>yotei" class="naviTop">活動予定</a></li>			 
+          <li><a href="<?php home_url(); ?>contact" class="naviSide">お問い合わせ</a></li>
+			 
+        </ul>  
+    
+ </div>
 
   </div><!-- フッターインナー終了!-->
 
@@ -52,14 +58,8 @@
   </div>
 
 </footer>
-<<<<<<< HEAD
-<!--ページトップボタン-->
-=======
 
-<!--トップスクロール-->
-
->>>>>>> origin/master
-    <div id="pagetop"><span class="top_triangle"></span></div>
+    <div id="pagetop"><span class="top_triangle"></span></div><!--ページトップボタン-->
 
 
 </div><!-- ラッパー終了 !-->
