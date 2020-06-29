@@ -1,0 +1,110 @@
+.achive-event {
+    margin-bottom: 2.75rem;
+
+    &__name {
+        text-align: center;
+        background-color: #f4af37;
+        color: #fff;
+        font-size: 1.48rem;
+        padding: .98rem 0;
+        font-weight: 600;
+    }
+
+    &__box {
+      
+        padding: 2.75rem 3.2rem;
+        text-align: center;
+    
+        border: 4px solid #f4af37;
+        border-top: none;
+        @media (max-width: 767px) {
+            display: block;
+            padding: 2rem;
+        }
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.2rem;
+    }
+
+    &__thumb {
+        width: 320px;
+        height: 320px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 767px) {
+            width: 80%;
+            height: 63vw;
+            margin: 0 auto 2.5rem;
+        }
+    }
+
+    &__table {
+        width: 530px;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.3rem;
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__ttl {
+        background-color: #f0bc6d;
+        text-align: center;
+        width: 23%;
+        padding: 1.4rem 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-right: 1.3rem;
+        @media (max-width: 767px) {
+            padding: .88rem 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &__desc {
+        width: 70%;
+        font-size: .94rem;
+        @media (max-width: 767px) {
+            width: 100%;
+            font-size: 1.29rem;
+        }
+        &--price {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.event-btn {
+    width: 230px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: #fff;
+    background-color: #d54d27;
+    margin: 0 .45rem;
+    display: inline-block;
+    @media (max-width: 767px) {
+        display: block;
+        width: 65%;
+        margin: 1.2rem auto;
+    }
+}

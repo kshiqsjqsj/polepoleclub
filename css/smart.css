@@ -12,43 +12,20 @@
 		display: block;
 	}
 
+	.pc-display {
+	display: none !important;
+}
+
+	.sp-display {
+		display: block !important;
+	}
+
 	.tablet {
 		display: none;
 	}
 	
 	#wrappre {
 		overflow: hidden;
-	}
-
-	header {
-		position: fixed;
-		top: 0;
-		height: 50px;
-		background-color: rgba(255,255,255,0.8);
-		z-index: 9999;
-		margin: 0;
-	}
-
-
-	#headerInner h1 {
-		width: 210px;
-		height: 40px;
-		top: 7px;
-		left: 4px;
-	}
-
-	#headerInner button.btn_menu {
-    top: -2px;
-  }
-
-	.smartGnavi {
-  top: 50px;
-	right: 0;
-   }
-	
-	.content {
-		width: 96%;
-		margin: 40px auto ;
 	}
 
 	.main_area {
@@ -137,8 +114,7 @@
 	}	
 
 	/*サイドスライド*/
-
-	.side_slide_subject, #side_slide {
+ #side_slide {
 		width: 85%;
 		max-width: 450px;
 	}
@@ -258,12 +234,7 @@
 		padding-top: 50px;
 	}
 	
-	/*見だし画像無しページ（single,access）上部余白設定*/
-	.space-top{
-		padding-top: 60px;
-		margin-top: 0;
-	}
-
+	
 	/*コンタクトページ*/
 
 	.contactWrap {

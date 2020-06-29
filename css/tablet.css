@@ -11,14 +11,7 @@
 	}
 
 
-	header {
-		position: fixed;
-		top: 0;
-		height: 70px;
-		background-color: rgba(255,255,255,0.8);
-		z-index: 9999;
-		margin: 0;
-	}
+
 
 	header #headerInner {
 		width: 96%;
@@ -27,11 +20,6 @@
 
 	}
 
-	#headerInner h1 {
-		width: 300px;
-		height: 60px;
-		top: 8px;
-	}
 
 	#headerInner h1 img {
 		width: 96%;
@@ -39,89 +27,7 @@
 	}
 
 
-	#headerInner button.btn_menu {
-    display: block;
-    background: none;
-    border: none;
-    padding: 0;
-    width: 36px;
-	height: 42px;
-    color: green;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    position: absolute;
-    top: 7px;
-    right: 5px;
-    z-index: 1001;
-    text-align: center;
-    outline: none;
-  }
-
-  /*   ハンバーガーボタン3本線   */
-  button.btn_menu span.bar {
-    display: block;
-	width:100%;
-    height: 2px;
-	position: absolute;
-    background-color: green;
-    transition: all 0.2s;
-
-  }
-
-	#headerInner button.btn_menu span.bar1 {
-		top: 12px;
-	}
-
-	#headerInner button.btn_menu span.bar2 {
-		top:  50%;
-		margin-top: -1px;
-	}
-
-	#headerInner button.btn_menu span.bar3 {
-		bottom: 12px;
-	}
-
-	#headerInner button .menubtn,#headerInner button .close {
-		position: absolute;
-		bottom: -5px;
-		left: 2px;
-	}
 	
-	.menubtn,.close{
-		font-family: 'Roboto', sans-serif;
-		font-size: 10px;
-		text-align: center;
-	}
-
-	  #headerInner button .close{
-		letter-spacing: 0;
-		display: none;
-	  }
-	  #headerInner button .menubtn {
-		display: block;
-	  }
-
-	/*  メニューアクティブ時  */
-
- #headerInner button.btn_menu.active .bar1 {
-	  -webkit-transform:translateY(8px) rotate(45deg);
-	  -ms-transform:translateY(8px) rotate(45deg);
-	  transform:translateY(8px) rotate(45deg);
-  }
-  #headerInner button.btn_menu.active .bar2 {
-    opacity: 0;
-  }
-  #headerInner button.btn_menu.active .bar3 {
-    -webkit-transform:translateY(-8px) rotate(-45deg);
-        -ms-transform:translateY(-8px) rotate(-45deg);
-            transform:translateY(-8px) rotate(-45deg);
-  }
-  #headerInner button.active .menubtn {
-    display: none;
-  }
-  #headerInner button.active .close {
-    display: block;
-  }
 	
 	.smartGnavi {
 		display: none;
@@ -187,11 +93,6 @@
 		 padding: 0 8px;
 	}
 
-	.content {
-		width: 92%;
-		margin: 40px auto ;
-	}
-
 	
 	#top {
 	width: 63%;
@@ -253,11 +154,6 @@
 		padding-top: 70px;
 	}
 	
-/*見だし画像無しページ（single,access）上部余白設定*/
-	.space-top{
-		padding-top: 80px;
-		margin-top: 0;
-	}
 
 /*アクセスページ*/
 		.gmap_wrap {

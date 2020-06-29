@@ -1,7 +1,8 @@
 <?php
 /*
 Template Name: コンタクトページ
-*/?>
+*/
+?>
 
 <?php get_header(); ?>
 
@@ -11,19 +12,12 @@ Template Name: コンタクトページ
 
  </div>
 
- <div class="gNavi pc">
-   <!--カスタムメニュー-->
-   <?php wp_nav_menu( array(
-           'theme_location' => 'globalNavi',
-           'container' => 'nav',
-           'container_class' => 'navInner',
-           'container_id' => 'navInner',
-           'fallback_cb' => ''
-     ) ); ?>
-   </div>
-
-  <div class="contactWrap">
+<div class="inner">
 <?php breadcrumb(); ?>
+</div> 
+
+  <div class="content">
+
     <?php if(have_posts()): the_post(); ?>
        <section>
          <article>
