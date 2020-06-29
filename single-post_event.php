@@ -15,7 +15,7 @@
   </div>
 
 <?php else: ?>
-  <h1 class="page-head-no-img" id="js-mt-spaece">
+  <h1 class="page-head-no-img">
       <span class="page-head-no-img__text"><?php the_title();?></span>
   </h1>
 <?php endif; ?>
@@ -24,68 +24,67 @@
 </div>
 <div class="content cf space-top">
   <?php if(have_posts()): the_post(); ?>
-  <section class="content__main">
+  <section class="main_area">
     <article>
      
       <div class="category-date-wrap"> 
-        <!--カテゴリ--> 
-        <span class="category-area <?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->slug; } ?>">
-        <?php $postcat=get_the_category(); echo $postcat[0]->name; ?>
-        </span> 
         <!--投稿日を表示--> 
         <span class="kiji-date"> <i class="fas fa-pencil-alt"></i>
         <time datetime="<?php echo get_the_date( 'Y-m-d' ); ?>">
           <?php the_time('Y/m/d'); ?>
         </time>
-        </span> </div>
+        </span> 
+      </div>
       <div class="content_area clearfix">
         <?php remove_filter('the_content', 'wpautop'); ?>
         <?php the_content(); ?>
       </div>
-      
       <?php if(get_field('pr_tit')):?>
-      <div class="pr">
-        <div class="pr__top">
+      <div class="pr_area">
+       
+
+        <div class="pr__box__wrap">
+
             <div class="pr__thumb">
               <img src="<?php the_field('pr_thumb'); ?>" alt="キャッチ画像">
             </div>
 
-              <div class="pr__left">
+            <div class="pr_left">
                 
-                  <h3 class="pr__tit">
-                    <?php the_field('pr_tit'); ?>
-                  </h3>
+          <h3 class="pr_tit">
+            <?php the_field('pr_tit'); ?>
+          </h3>
 
-                    <div class="pr__desc">
-                      <?php the_field('pr_desc'); ?>
-                    </div>      
+            <div class="pr_desc">
+              <?php the_field('pr_desc'); ?>
+            </div>      
+            </div>
 
-                                    <?php
-                        $btn_type = get_field( 'btn_type' );
-                        if ( $btn_type == 'red' ) {
-                          ?>
-                        <a href="<?php the_field('pr_link'); ?>" class="pr_btn red">
-                        <?php the_field('btn_txt'); ?>
-                        </a>
-                        <?php } elseif($btn_type =='blue'){ ?>
-                        <a href="<?php the_field('pr_link'); ?>" class="pr_btn blue">
-                        <?php the_field('btn_txt'); ?>
-                        </a>
-                        <?php } elseif($btn_type =='green'){ ?>
-                        <a href="<?php the_field('pr_link'); ?>" class="pr_btn green">
-                        <?php the_field('btn_txt'); ?>
-                        </a>
-                        <?php } elseif($btn_type =='yellow'){ ?>
-                        <a href="<?php the_field('pr_link'); ?>" class="pr_btn yellow">
-                        <?php the_field('btn_txt'); ?>
-                        </a>
-                        <?php }?>
-                      </div>
-               
-              </div>
+
         </div>
-        <?php endif; ?>
-       
+      
+        <?php
+        $btn_type = get_field( 'btn_type' );
+        if ( $btn_type == 'red' ) {
+          ?>
+        <a href="<?php the_field('pr_link'); ?>" class="pr_btn red">
+        <?php the_field('btn_txt'); ?>
+        </a>
+        <?php } elseif($btn_type =='blue'){ ?>
+        <a href="<?php the_field('pr_link'); ?>" class="pr_btn blue">
+        <?php the_field('btn_txt'); ?>
+        </a>
+        <?php } elseif($btn_type =='green'){ ?>
+        <a href="<?php the_field('pr_link'); ?>" class="pr_btn green">
+        <?php the_field('btn_txt'); ?>
+        </a>
+        <?php } elseif($btn_type =='yellow'){ ?>
+        <a href="<?php the_field('pr_link'); ?>" class="pr_btn yellow">
+        <?php the_field('btn_txt'); ?>
+        </a>
+        <?php }?>
+      </div>
+      <?php endif; ?>
       <div id="prev_next">
         <?php
         $prevpost = get_adjacent_post( false, '', true ); //前の記事
@@ -120,8 +119,11 @@
     </article>
   </section>
   <?php  endif; ?>
-  <?php get_sidebar(); ?>
-
+  <aside class="right_area">
+    <div class="list-wrappre">
+      <?php dynamic_sidebar( 'list-widget' ); ?>
+    </div>
+  </aside>
 </div>
 <!-- コンテンツエリア終了 !-->
 

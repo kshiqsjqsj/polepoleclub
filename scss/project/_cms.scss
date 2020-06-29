@@ -1,0 +1,75 @@
+/*ワードプレス記述欄 */
+.content_area  {
+	padding: 5px 8px;
+	font-size: 14px;
+	word-wrap: break-word;
+	letter-spacing: 2px;
+	line-height: 1.88;
+	font-weight: normal;
+}
+
+.content_area  a {
+	color: blue;
+}
+
+.content_area  a:hover {
+	text-decoration: underline;
+}
+
+.content_area p {
+    display: block;
+    margin: 0.5em 0;
+}
+
+.content_area .wp-caption img {
+	width: 100%;
+}
+
+.content_area .wp-caption-text{
+	margin: 0.5em 0;
+}
+
+.content_area strong { font-weight: bold; }
+.content_area em { font-style: italic; }
+.content_area blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+.content_area .aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+.content_area .alignright { 
+	float: right;
+    margin-right: 5%;
+}
+.content_area .alignleft { 
+	float: left;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width:1050px){
+	
+	.content_area .alignright,
+	.content_area .alignleft{
+		float: none;
+		margin: 2em auto;
+	}
+	
+}
+
+/* ワードプレス記述欄clearfix */
+ 
+.clearfix {
+    overflow: hidden;
+    zoom: 1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

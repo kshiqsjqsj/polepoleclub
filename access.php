@@ -6,22 +6,33 @@ Template Name: アクセスページ
 
 <?php  get_header(); ?>
 
-<div class="gNavi pc">
-  <!--カスタムメニュー-->
-  <?php wp_nav_menu( array(
-          'theme_location' => 'globalNavi',
-          'container' => 'nav',
-          'container_class' => 'navInner',
-          'container_id' => 'navInner',
-          'fallback_cb' => ''
-    ) ); ?>
+<!-- <div class="page-head" id="js-mt-spaece">
+  
+      <div class="page-head__img">
+        <img src="<?php the_field('pages_header_img'); ?>" alt="<?php the_title();?>">
+      </div>
+
+      <div class="page-head__inner">
+        <h1 class="page-head__ttl">
+          <?php the_title();?>
+        </h1>
+      </div>
+  </div> -->
+
+
+  <h1 class="page-head-no-img">
+      <span class="page-head-no-img__text"><?php the_title();?></span>
+  </h1>
+
+<div class="inner">
+<?php breadcrumb(); ?>
 </div>
 
 
 
 <div class="gmap_wrap space-top">
 
-  <?php breadcrumb(); ?>
+
 
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <div class="title">

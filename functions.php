@@ -19,6 +19,11 @@ function widgetarea_init() {
       
       ));
 }
+
+
+
+
+
 add_action( 'widgets_init', 'widgetarea_init' );
 
 //バナーエリアウィジェット
@@ -44,6 +49,7 @@ function hook_widget_archives_args( $args ) {
 
     return $args;
 }
+
 
 // パンくずリスト
 function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "clearfix")){
@@ -139,3 +145,19 @@ function custom_tiny_mce_forced_root_block( $settings ) {
 //エディタ用CSS挿入
 
 add_editor_style( 'admin/editor-style.css' );
+
+
+//管理画面にメニュー追加
+
+/*メニューにトップページ管理*/
+function add_page_to_admin_menu()
+{
+    add_menu_page('トップページ管理', 'トップページ管理', 'edit_posts', 'post.php?post=7578&action=edit', '', 'dashicons-format-gallery
+', 3);
+
+add_menu_page('ナビゲーション管理', 'ナビゲーション管理', 'edit_posts', '/post.php?post=7579&action=edit', '', 'dashicons-format-gallery
+', 3);
+}
+add_action('admin_menu', 'add_page_to_admin_menu');
+
+
